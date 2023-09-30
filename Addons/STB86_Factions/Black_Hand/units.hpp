@@ -28,8 +28,8 @@ class STB86_BH_Rifleman : O_Soldier_A_F {
 	Items[] = {MAG_3(FirstAidKit)};
 	RespawnItems[] = {MAG_3(FirstAidKit)};
 
-	magazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
-	respawnMagazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	magazines[] = {MAG_10(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	respawnMagazines[] = {MAG_10(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
 
 	linkedItems[] = {V_PlateCarrier1_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
 	respawnLinkedItems[] = {V_PlateCarrier1_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
@@ -43,8 +43,8 @@ class STB86_BH_Squad_Lead : STB86_BH_Rifleman {
 	weapons[] = {STB86_BH_HK416, STB86_BH_M6G, Throw, Put};
 	respawnWeapons[] = {STB86_BH_HK416, STB86_BH_M6G, Throw, Put};
 
-	magazines[] = {MAG_6(STB86_556x45_30rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
-	respawnMagazines[] = {MAG_6(STB86_556x45_30rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	magazines[] = {MAG_10(STB86_556x45_30rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	respawnMagazines[] = {MAG_10(STB86_556x45_30rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
 	
 	linkedItems[] = {V_PlateCarrier2_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
 	respawnLinkedItems[] = {V_PlateCarrier2_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
@@ -66,8 +66,8 @@ class STB86_BH_Marksman : STB86_BH_Rifleman {
 	weapons[] = {STB86_BH_BR55XHB, STB86_BH_M6G, Throw, Put};
 	respawnWeapons[] = {STB86_BH_BR55XHB, STB86_BH_M6G, Throw, Put};
 	
-	magazines[] = {MAG_4(OPTRE_36Rnd_95x40_Mag), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
-	respawnMagazines[] = {MAG_4(OPTRE_36Rnd_95x40_Mag), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	magazines[] = {MAG_10(OPTRE_36Rnd_95x40_Mag), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	respawnMagazines[] = {MAGMAG_10_4(OPTRE_36Rnd_95x40_Mag), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
 	
 	linkedItems[] = {V_TacVestIR_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
 	respawnLinkedItems[] = {V_TacVestIR_blk, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
@@ -97,8 +97,8 @@ class STB86_BH_SAW : STB86_BH_Rifleman {
 	weapons[] = {STB86_BH_RPK, STB86_BH_M6G, Throw, Put};
 	respawnWeapons[] = {STB86_BH_RPK, STB86_BH_M6G, Throw, Put};
 
-	magazines[] = {MAG_4(75rnd_762x39_AK12_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
-	respawnMagazines[] = {MAG_4(75rnd_762x39_AK12_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	magazines[] = {MAG_6(75rnd_762x39_AK12_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	respawnMagazines[] = {MAG_6(75rnd_762x39_AK12_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
 
 };
 class STB86_BH_AT : STB86_BH_Rifleman { 
@@ -108,8 +108,8 @@ class STB86_BH_AT : STB86_BH_Rifleman {
 	weapons[] = {STB86_BH_AK15, STB86_BH_M6G, OPTRE_M41_SSR, Throw, Put};
 	respawnWeapons[] = {STB86_BH_AK15, STB86_BH_M6G, OPTRE_M41_SSR, Throw, Put};
 
-	magazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT};
-	respawnMagazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT};
+	magazines[] = {MAG_4(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT};
+	respawnMagazines[] = {MAG_4(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT};
 
 
 	linkedItems[] = {STB86_BH_GL_Vest, STB86_BH_Helmet, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
@@ -121,8 +121,8 @@ class STB86_BH_AA : STB86_BH_AT {
 	displayName="AA Rifleman";
 	backpack="STB86_BH_FieldPack_AA";
 
-	magazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT_Thermal};
-	respawnMagazines[] = {MAG_6(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT_Thermal};
+	magazines[] = {MAG_4(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT_Thermal};
+	respawnMagazines[] = {MAG_4(STB86_762x39_32rnd_Tracer), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), OPTRE_M41_Twin_HEAT_Thermal};
 
 };
 
@@ -152,8 +152,8 @@ class STB86_BH_Grenadier : STB86_BH_Rifleman {
 	weapons[] = {STB86_BH_AK15GL, STB86_BH_M6G, Throw, Put};
 	respawnWeapons[] = {STB86_BH_AK15GL, STB86_BH_M6G, Throw, Put};
 
-	magazines[] = {MAG_6(STB86_762x39_32rnd), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), MAG_3(1Rnd_HE_Grenade_shell), MAG_2(1Rnd_Smoke_Grenade_shell)};
-	respawnMagazines[] = {MAG_6(STB86_762x39_32rnd), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), MAG_3(1Rnd_HE_Grenade_shell), MAG_2(1Rnd_Smoke_Grenade_shell)};
+	magazines[] = {MAG_10(STB86_762x39_32rnd), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), MAG_3(1Rnd_HE_Grenade_shell), MAG_2(1Rnd_Smoke_Grenade_shell)};
+	respawnMagazines[] = {MAG_10(STB86_762x39_32rnd), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke), MAG_3(1Rnd_HE_Grenade_shell), MAG_2(1Rnd_Smoke_Grenade_shell)};
 };
 
 class STB86_BH_Sniper : STB86_BH_Rifleman {
@@ -176,11 +176,11 @@ class STB86_BH_Officer : STB86_BH_Rifleman {
 	weapons[] = {arifle_AKS_F, STB86_BH_M6G, Throw, Put};
 	respawnWeapons[] = {arifle_AKS_F, STB86_BH_M6G, Throw, Put};
 
-	magazines[] = {MAG_6(30Rnd_545x39_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
-	respawnMagazines[] = {MAG_6(30Rnd_545x39_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	magazines[] = {MAG_10(30Rnd_545x39_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
+	respawnMagazines[] = {MAG_10(30Rnd_545x39_Mag_F), MAG_2(OPTRE_8Rnd_127x40_Mag), MAG_2(OPTRE_M9_Frag), MAG_2(OPTRE_M2_Smoke)};
 
-	linkedItems[] = {V_SmershVest_01_radio_F, H_MilCap_gry, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
-	respawnLinkedItems[] = {V_SmershVest_01_radio_F, H_MilCap_gry, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
+	linkedItems[] = {V_SmershVest_01_radio_F, STB86_BH_Beret, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
+	respawnLinkedItems[] = {V_SmershVest_01_radio_F, STB86_BH_Beret, G_Bandanna_blk, ItemMap, ItemCompass, ItemWatch, ItemRadio};
 
 };
 class STB86_BH_Crewman : STB86_BH_Engineer {

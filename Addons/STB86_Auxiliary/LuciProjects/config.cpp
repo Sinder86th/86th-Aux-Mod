@@ -28,7 +28,7 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	 class Test_Bot_Uniform : B_Soldier_base_F {
-        scope = 2;
+        scope = 1;
         author = "Luci";
 		picture = "STB86_Auxiliary\LuciProjects\Icons\Luci_CA.paa";
         model = "STB86_Auxiliary\LuciProjects\TESTING\leg.p3d";
@@ -134,17 +134,6 @@ class CfgWeapons
 			"STB86_Auxiliary\LuciProjects\Textures\86thSTB_beret02_co.paa"
 		};
 	};
-	class BH_Beret : H_Beret_Colonel {
-		author = "Luci";
-		Scope = 2;
-		picture = "STB86_Auxiliary\LuciProjects\Icons\Luci_CA.paa";
-		displayName = "BH Beret";
-
-		hiddenSelectionsTextures[] =
-		{
-			"STB86_Auxiliary\LuciProjects\Textures\BlackHand_beret02_co.paa"
-		};
-	};
 	class STB86_Ghost_Mask: NVGoggles {
 		displayName = "[86th] Ghost";
 		author = "Luci";
@@ -172,7 +161,7 @@ class CfgWeapons
 		};
 	};
 	class Test_Bot_Uniform : Uniform_Base {
-        scope = 2;
+        scope = 1;
         author = "Luci";
 		dlc="LuciProjects";
         displayName = "Test_Bot";
@@ -378,6 +367,7 @@ class CfgHeads
 	class Default_A3;
 	class TestBothead: Default_A3
 	{
+		scope = 1;
 		model="STB86_Auxiliary\LuciProjects\TESTING\Face.p3d";
 		selectionHeadWound="injury_head";
 		selectionPersonality="personality";

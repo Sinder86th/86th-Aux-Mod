@@ -27,8 +27,10 @@ class CfgPatches
 				"STB86_BH_Crewman",
 				"STB86_BH_Autorifleman",
 				// Vics
-				"STB86_BH_Truck_Covered",
 				"STB86_BH_Truck",
+				"STB86_BH_Truck_Covered",
+				"STB86_BH_Truck_Ammo",
+				"STB86_BH_Truck_Fuel",
 				"STB86_BH_Car_AT",
 				"STB86_BH_Car_armed",
 				"STB86_BH_Car_unarmed",
@@ -47,6 +49,7 @@ class CfgPatches
 				"STB86_BH_Medic_Vest",
 				"STB86_BH_GL_Vest",
 				"STB86_BH_Crew_Helmet",
+				"STB86_BH_Beret",
 				// Weapons
 				"STB86_BH_HK416 ",
 				"STB86_BH_AK15 ",
@@ -93,6 +96,7 @@ class CfgWeapons{
 
 #define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
 #define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}
+#define MAG_10(a) a,a,a,a,a,a,a,a,a,a
 #define MAG_6(a) a,a,a,a,a,a
 #define MAG_4(a) a,a,a,a
 #define MAG_3(a) a,a,a
@@ -133,10 +137,13 @@ Groups
 */
 #include "CfgGroups.hpp"
 
-class 30Rnd_556x45_Stanag;
-class 30Rnd_762x39_AK12_Mag_F;
+
 
 class CfgMagazines {
+	class 30Rnd_556x45_Stanag;
+	class 30Rnd_762x39_AK12_Mag_F;
+	class 75Rnd_762x39_Mag_F;
+
 	class STB86_556x45_30rnd : 30Rnd_556x45_Stanag 	{
 		displayname="BH HKammo 9x5";
 		ammo="OPTRE_B_95x40_Ball";		
@@ -162,7 +169,7 @@ class CfgMagazines {
 		descriptionshort="32 Round Magazine<ma5>7.62 ";
 		tracersEvery=1;
 	};
-	class STB86_762x39_60rnd : STB86_762x39_32rnd{		
+	class STB86_762x39_60rnd : 75Rnd_762x39_Mag_F{		
 		dispayname="BH AK12ammo 762x51";
 		ammo="OPTRE_B_762x51_Ball";
 		count=60;

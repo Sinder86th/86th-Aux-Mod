@@ -30,6 +30,7 @@ class CfgPatches
 				"STB86_BH_CH_Fanatic",
 				"STB86_BH_CH_FakeFanatic",
 				"STB86_BH_CH_Ghost",
+				"STB86_BH_CH_Nightstalker",
 				// Vics
 				"STB86_BH_CH_MBT",
 				"STB86_BH_CH_MBT_02",
@@ -61,7 +62,7 @@ class CfgPatches
 				"STB86_BH_CH_Lead_Vest",
 				"STB86_BH_CH_Medic_Vest",
 				"STB86_BH_CH_Autorifleman_Vest",
-				"STB86_BH_CH_Devastator_Vest",
+				"STB86_BH_CH_UpArmor_Vest",
 				"STB86_BH_CH_Battledress",
 				"STB86_BH_CH_Helmet",
 				"STB86_BH_CH_Crew_Helmet",
@@ -77,6 +78,8 @@ class CfgPatches
 				"STB86_BH_CH_M247H",
 				"STB86_BH_CH_M6G",
 				"STB86_BH_CH_M33",
+				"STB86_BH_CH_ARC9",
+				"STB86_BH_CH_ARC9T",
 
 				"STB86_BH_CH_MBT_02_LMG",
 				"STB86_BH_CH_IFV_02_FLAK",
@@ -130,6 +133,7 @@ class CfgWeapons{
 };
 #define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
 #define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}
+#define MAG_10(a) a,a,a,a,a,a,a,a,a,a
 #define MAG_6(a) a,a,a,a,a,a
 #define MAG_4(a) a,a,a,a
 #define MAG_3(a) a,a,a

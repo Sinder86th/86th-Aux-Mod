@@ -117,13 +117,13 @@ class STB86_BH_CH_M247H : OPTRE_M247H_Etilka{
 		"STB86_Factions\Black_Hand\The_Chosen\textures\weapons\M247H_Cover.paa"
 	};
 };
-class STB86_BH_CH_ARC_9 : srifle_DMR_02_F {
+class STB86_BH_CH_ARC9 : srifle_DMR_02_F {
 		ace_overheating_mrbs = 3000000;
 		ace_overheating_slowdownFactor = 0;
 		ace_overheating_dispersion = 0;
 		ace_overheating_closedBolt = 0;
-		scope=1;
-		scopeArsenal = 1;
+		scope=2;
+		scopeArsenal = 2;
 		author = AUTHOR;
 		dlc = DLC;
 		displayName = "ARC-9 Railgun [CH]";
@@ -158,7 +158,7 @@ class STB86_BH_CH_ARC_9 : srifle_DMR_02_F {
 				};
 			};
 
-			reloadTime=0.25;
+			reloadTime=0.75;
 			dispersion=0.0005;
 			recoil="recoil_single_mx";
 			recoilProne="recoil_single_prone_mx";
@@ -198,7 +198,7 @@ class STB86_BH_CH_ARC_9 : srifle_DMR_02_F {
 				};
 			};
 
-			reloadTime=0.25;
+			reloadTime=0.75;
 			dispersion=0.0005;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
@@ -209,6 +209,15 @@ class STB86_BH_CH_ARC_9 : srifle_DMR_02_F {
 			maxRange=300;
 			maxRangeProbab=0.050000001;
 		};
+};
+class STB86_BH_CH_ARC9T : STB86_BH_CH_ARC9 {
+	displayName = "ARC-9T Railgun [CH]";
+	class Single : Single {
+		reloadTime = 0.25;	
+	};
+	class FullAuto : FullAuto {
+		reloadTime = 0.25;
+	};
 };
 //Secondary
 class TCF_M33;

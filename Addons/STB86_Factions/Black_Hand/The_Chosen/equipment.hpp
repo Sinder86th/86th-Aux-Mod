@@ -893,8 +893,8 @@ class STB86_BH_CH_Autorifleman_Vest : STB86_BH_CH_Base_Vest {
 			};
 		};
 };
-class STB86_BH_CH_Devastator_Vest : STB86_BH_CH_Base_Vest {
-		displayName = "Devastator Vest [CH]";
+class STB86_BH_CH_UpArmor_Vest : STB86_BH_CH_Base_Vest {
+		displayName = "Up-Armored Vest [CH]";
 		hiddenSelectionsTextures[] =
 		{
 			"STB86_Factions\Black_hand\The_Chosen\textures\Blackhand_Armor.paa", // Vest

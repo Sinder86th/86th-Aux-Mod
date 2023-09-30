@@ -361,7 +361,7 @@ class CfgFaces
 		class Nightstalker : Default
 		{
 			author="LUCI";
-			displayName = "Nightstalker"
+			displayName = "Nightstalker";
 			dlc="LuciProjects";
 			name="Nightstalker";
 			head="Nightstalker";

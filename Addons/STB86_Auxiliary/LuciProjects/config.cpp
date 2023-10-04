@@ -61,6 +61,8 @@ class CfgWeapons
 	class H_Beret_Colonel;
 	class Binocular;
 	class ItemInfo;
+	class ItemCore;
+	class HeadgearItem;
 	class UniformItem;
 	class Uniform_Base;
 	
@@ -134,6 +136,17 @@ class CfgWeapons
 			"STB86_Auxiliary\LuciProjects\Textures\86thSTB_beret02_co.paa"
 		};
 	};
+	class BH_Beret : H_Beret_Colonel {
+		author = "Luci";
+		Scope = 2;
+		picture = "STB86_Auxiliary\LuciProjects\Icons\Luci_CA.paa";
+		displayName = "BH Beret";
+
+		hiddenSelectionsTextures[] =
+		{
+			"STB86_Auxiliary\LuciProjects\Textures\BlackHand_beret02_co.paa"
+		};
+	};
 	class STB86_Ghost_Mask: NVGoggles {
 		displayName = "[86th] Ghost";
 		author = "Luci";
@@ -178,6 +191,42 @@ class CfgWeapons
 			uniformType="Neopren";
 		};
     };
+	class H_MK1_LICH : ItemCore {
+		author = "Luci";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "MK1 LICH";
+		picture = "STB86_Auxiliary\LuciProjects\Icons\MK1_LICH.paa";
+		model = "STB86_Auxiliary\LuciProjects\P3Ds\MK1.p3d";
+		hiddenSelections[] = { "camo","visor" };
+		hiddenSelectionsTextures[] = {"STB86_Auxiliary\LuciProjects\Textures\MK1.paa","STB86_Auxiliary\LuciProjects\Textures\Mk1_visor.paa"};
+		class ItemInfo : HeadgearItem
+		{
+			mass = 40;
+			uniformModel = "STB86_Auxiliary\LuciProjects\P3Ds\MK1.p3d";
+			modelSides[] = {};
+			hiddenSelections[] = { "camo","visor" };
+
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
+		class H_MK1_LICH_Worn : H_MK1_LICH {
+		author = "Luci";
+		displayName = "MK1 LICH (worn)";
+		hiddenSelections[] = { "camo","visor" };
+		hiddenSelectionsTextures[] = 
+		{
+			"STB86_Auxiliary\LuciProjects\Textures\MK1_worn.paa","STB86_Auxiliary\LuciProjects\Textures\Mk1_visor_2.paa"
+		};
+	};
 };
 class CfgGlasses
 {

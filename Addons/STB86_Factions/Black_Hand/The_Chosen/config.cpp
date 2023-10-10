@@ -122,6 +122,8 @@ class CfgPatches
 class Mode_SemiAuto;
 class Mode_FullAuto;
 class CfgWeapons{
+class ItemCore;
+class HeadgearItem;
 	/*
 	Equipment - Vests, Helmets, Uniform
 	*/
@@ -130,6 +132,34 @@ class CfgWeapons{
 	Weapons
 	*/
 	#include "weapons.hpp"
+	
+	class Confessor_MK2 : ItemCore {
+		author = "Luci";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Confessor_MK2";
+		picture = "STB86_Auxiliary\LuciProjects\Icons\Confessor_MK2_CA.paa";
+		model = "STB86_Factions\Black_Hand\The_Chosen\P3Ds\Confessor_MK2.p3d";
+		hiddenSelections[] = { "camo" };
+		hiddenSelectionsTextures[] = {"STB86_Factions\Black_Hand\The_Chosen\Textures\Chosen_CO.paa"};
+		class ItemInfo : HeadgearItem
+		{
+			mass = 40;
+			uniformModel = "STB86_Factions\Black_Hand\The_Chosen\P3Ds\Confessor_MK2.p3d";
+			modelSides[] = {};
+			hiddenSelections[] = { "camo", };
+
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 };
 #define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
 #define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}

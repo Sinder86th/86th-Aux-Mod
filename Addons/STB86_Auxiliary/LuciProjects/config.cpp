@@ -277,8 +277,7 @@ class CfgGlasses
 			"STB86_Auxiliary\LuciProjects\Textures\cape_co.paa"
 		};
 	};
-	class G_cape_v2	:  None
-	{
+	class G_cape_v2	:  None {
 		author = "Luci";
 		_generalMacro="86th_cape_v2";
 		Scope = 2;
@@ -301,8 +300,7 @@ class CfgGlasses
 			"STB86_Auxiliary\LuciProjects\Textures\cape_v2_co.paa"
 		};
 	};
-	class G_Katana_v2 :  None
-	{
+	class G_Katana_v2 :  None {
 		author = "Luci";
 		_generalMacro="86th_katana_v2";
 		Scope = 2;
@@ -373,6 +371,29 @@ class CfgGlasses
 			"STB86_Auxiliary\LuciProjects\Textures\Misfit_SL_Pauldron.paa"
 		};
 	};
+	class G_ONI :  None {
+		author = "Luci";
+		_generalMacro="ONI_Panther";
+		Scope = 2;
+		mass = 4;
+		ScopeArsenal = 2;
+		displayname = "ONI Mask";
+		model = "STB86_Auxiliary\LuciProjects\P3Ds\ONI_panther.p3d";
+		picture = "STB86_Auxiliary\LuciProjects\Icons\ONI_panther_CA.paa";
+		identityTypes[] =
+		{
+			"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,
+			"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",00,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0
+		};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"stb86_auxiliary\luciprojects\textures\oni_co.paa"
+		};
+	};
 };
 class CfgFaces
 {	
@@ -416,7 +437,6 @@ class CfgHeads
 	class Default_A3;
 	class TestBothead: Default_A3
 	{
-		scope = 1;
 		model="STB86_Auxiliary\LuciProjects\TESTING\Face.p3d";
 		selectionHeadWound="injury_head";
 		selectionPersonality="personality";

@@ -379,7 +379,7 @@ class CfgGlasses
 		ScopeArsenal = 2;
 		displayname = "ONI Mask";
 		model = "STB86_Auxiliary\LuciProjects\P3Ds\ONI_panther.p3d";
-		picture = "STB86_Auxiliary\LuciProjects\Icons\ONI_panther_CA.paa";
+		picture = "\STB86_Auxiliary\LuciProjects\Icons\ONI_panther_CA.paa";
 		identityTypes[] =
 		{
 			"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,

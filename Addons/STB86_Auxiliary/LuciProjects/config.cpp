@@ -218,7 +218,7 @@ class CfgWeapons
 			};
 		};
 	};
-		class H_MK1_LICH_Worn : H_MK1_LICH {
+	class H_MK1_LICH_Worn : H_MK1_LICH {
 		author = "Luci";
 		displayName = "MK1 LICH (worn)";
 		hiddenSelections[] = { "camo","visor" };
@@ -226,6 +226,77 @@ class CfgWeapons
 		{
 			"STB86_Auxiliary\LuciProjects\Textures\MK1_worn.paa","STB86_Auxiliary\LuciProjects\Textures\Mk1_visor_2.paa"
 		};
+	};
+	class H_MK1_SF_Worn : H_MK1_LICH {
+		displayName = "MK1 LICH (SF)";
+		hiddenSelections[] = { "camo","visor" };
+		hiddenSelectionsTextures[] = 
+		{
+			"STB86_Auxiliary\LuciProjects\Textures\MK1_SF.paa","STB86_Auxiliary\LuciProjects\Textures\Mk1_visor_2.paa"
+		};
+	};
+	class V_Lican: Vest_Camo_Base
+    {
+        author = "Luci";
+        scope = 2;
+        displayName = "MK1_LICAN";
+        picture = "\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
+        model = "\STB86_Auxiliary\LuciProjects\P3Ds\LICAN.p3d";
+		hiddenSelections[] = { "camo" };
+        hiddenSelectionsTextures[] = {"\STB86_Auxiliary\LuciProjects\Textures\Lican_Co.paa"};
+		hiddenSelectionsMaterials[] = {"STB86_Auxiliary\LuciProjects\RVMATT\Lican.rvmat"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\STB86_Auxiliary\LuciProjects\P3Ds\LICAN.p3d"; 
+			hiddenSelections[] = { "camo" };			
+            containerClass = Supply80;     
+            mass = 15;
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName	= "HitNeck"; // reference to the hit point class defined in the man base class
+					armor		= 8; // addition to armor of referenced hitpoint
+					passThrough	= 0.5; // multiplier of base passThrough defined in referenced hitpoint
+				};
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+						passThrough	= 0.1;
+				};
+			};
+		};
+	};
+	class V_Lican_SF : V_Lican
+    {
+        displayName = "MK1_LICAN (SF)";
+		hiddenSelections[] = { "camo" };
+        hiddenSelectionsTextures[] = {"\STB86_Auxiliary\LuciProjects\Textures\Lican_SF_Co.paa"};
+		hiddenSelectionsMaterials[] = {"STB86_Auxiliary\LuciProjects\RVMATT\Lican_SF.rvmat"};
 	};
 };
 class CfgGlasses

@@ -501,6 +501,19 @@ class CfgFaces
 				"Nightstalker"
 			};
 		};
+		class Luci : Default
+		{
+			author="LUCI";
+			displayName = "Luci";
+			dlc="LuciProjects";
+			name="Luci";
+			head="Luci";
+			texture="STB86_Auxiliary\LuciProjects\Textures\Luci_co.paa"; 
+			identityTypes[] = 
+			{
+				"Luci"
+			};
+		};
 	};
 };
 class CfgHeads
@@ -518,6 +531,11 @@ class CfgHeads
 		selectionHeadWound="injury_head";
 		selectionPersonality="personality";
 	};
+	class Luci : Default_A3
+	{
+		model="STB86_Auxiliary\LuciProjects\P3Ds\Luci.p3d";
+		selectionHeadWound="injury_head";
+	};
 };
 class CfgIdentities
 {
@@ -533,6 +551,14 @@ class CfgIdentities
 	{
 		name="Nightstalker";
 		face="Nightstalker";
+		speaker="-";
+		pitch=1;
+		glasses="none";
+	};
+	class Luci
+	{
+		name="Luci";
+		face="Luci";
 		speaker="-";
 		pitch=1;
 		glasses="none";
